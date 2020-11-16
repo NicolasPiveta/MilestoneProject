@@ -1,3 +1,7 @@
+To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+
+python3 -m http.server
+
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
 ![Image](https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)

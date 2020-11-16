@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700|Signika:100,200,300,400,500,600,700");
+
+/* -------------------------------------------- Heading */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #ffdb4d;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bg-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.bg-color {
+  width: 100%;
+  background-color: #ffdb4d;
+  font-weight: 600;
+}
+
+.nav-item {
+  margin: 0px 10px;
+  padding: 0px 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Signika", sans-serif;
+}
+
+.navbar-color {
+  color: #fafafa;
+}
+
+.btn-top {
+  margin-left: 180px;
+  border-radius: 20px;
+}
+
+.btn-top:hover {
+  background-color: #00c3ff;
+  color: #ffdb4d;
+  font-weight: 600;
+}
+.btn-bg {
+  font-size: 1.2rem;
+  font-family: "Signika", sans-serif;
+}
+.btn-bg .btn-left {
+  position: absolute;
+  top: 95%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+.btn-bg .btn-right {
+  position: absolute;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fafafa;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-bg .btn-left:hover,
+.btn-bg .btn-right:hover {
+  background-color: #ffdb4d;
+  color: #fafafa;
+}
+
+.bg-image {
+  height: 900px;
+  width: 100%;  
+}
+
+.bg-text {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-text h2 {
+  margin-bottom: 10px;
+  font-family: "Rubik";
+  font-size: 5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bg-text h3 {
+  margin-top: 20px;
+  font-family: "Signika";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
