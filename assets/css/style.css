@@ -7,19 +7,8 @@
   border: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
 .uppercase {
   text-transform: uppercase;
-}
-
-.bg-color {
-  background-color:  rgba(0, 188, 226, .7)
 }
 
 .navbar-brand {
@@ -145,3 +134,70 @@ h4 {
 }
 
 /* --------------------- About Section ----------------------- */
+
+#about-pg {
+  height: 1150px; 
+  background-color: rgba(0, 188, 226, .7); 
+  color: #fafafa;
+  position: relative;
+}
+
+#about-txt {
+    margin-top: 180px;
+    margin-right: 50px; 
+    width: 43%;
+    float: right;
+    text-align: left;
+    color: #001253;
+}
+#about-txt h1 {
+    margin-top: 20px;
+    padding-bottom: 95px;
+    font-family: "Rubik";
+    font-size: 4rem;
+    text-decoration: underline;
+    text-transform: uppercase;    
+}
+
+#about-txt h2 {
+    font-family: "Signika";
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#about-txt p {
+    padding-top: 340px;
+    font-family: "Signika";
+    font-size: 1.5rem;
+    font-weight: 400;    
+}
+
+hr {    
+  border: 10px;
+}
+
+#left-img {       
+    margin-left: 200px;  
+    padding-top: 180px;
+    position: relative;
+    z-index: 1;
+}
+
+#center-img {    
+    margin-left: 450px;
+    margin-top: -290px; 
+    position: relative;
+    z-index: 3;
+}
+
+#right-img {   
+    margin-left: 700px;
+    margin-top: -230px;    
+    position: relative;
+    z-index: 100;
+}
+
+#about-video {    
+    padding-top: 100px;
+    margin-left: 200px;
+}
