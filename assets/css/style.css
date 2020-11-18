@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700|Signika:100,200,300,400,500,600,700");
 
-/* -------------------------------------------- Heading */
+/* --------------------- Heading ----------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -12,61 +12,109 @@ h2,
 h3,
 h4 {
   margin: 0;
-  color: #ffdb4d;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-.bg-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
 .bg-color {
-  width: 100%;
-  background-color: #ffdb4d;
-  font-weight: 600;
+  background-color:  rgba(0, 188, 226, .7)
 }
 
-.nav-item {
-  margin: 0px 10px;
-  padding: 0px 20px;
+.navbar-brand {
+  margin-left: 20px;
+  padding: 1px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.navbar {
+  background-color: rgba(0, 188, 226, .7)  
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  font-family: "Signika", sans-serif;
-}
-
-.navbar-color {
+  font-family: "Signika";
+  font-weight: 700;
+  margin-right: 30px;
+  letter-spacing: 1px;
   color: #fafafa;
 }
 
-.btn-top {
-  margin-left: 180px;
-  border-radius: 20px;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #001253;
 }
 
-.btn-top:hover {
-  background-color: #00c3ff;
-  color: #ffdb4d;
-  font-weight: 600;
+
+#home-img {
+  width: 100%;
+  height: 850px;
+
+  animation-name: image-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+  position: relative;
 }
+
+#home-text h2 {
+  font-size: 5rem;
+  font-family: "Rubik";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fafafa;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home-text h3 {
+  font-size: 1.5rem;
+  font-family: "Signika";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+#home-pg {
+  width: 100%;
+  height: 850px;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes image-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
 .btn-bg {
   font-size: 1.2rem;
   font-family: "Signika", sans-serif;
 }
 .btn-bg .btn-left {
   position: absolute;
-  top: 95%;
+  top: 85%;
   left: 45%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  color: black;
+  background-color: #001253;
+  color: #fafafa;
   font-size: 16px;
   padding: 10px 20px;
   border: none;
@@ -76,12 +124,12 @@ h4 {
 }
 .btn-bg .btn-right {
   position: absolute;
-  top: 95%;
+  top: 85%;
   left: 55%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #fafafa;
-  color: black;
+  background-color: #001253;
+  color: #fafafa;
   font-size: 16px;
   padding: 10px 20px;
   border: none;
@@ -92,35 +140,8 @@ h4 {
 
 .btn-bg .btn-left:hover,
 .btn-bg .btn-right:hover {
-  background-color: #ffdb4d;
+  background-color: #0077ff;
   color: #fafafa;
 }
 
-.bg-image {
-  height: 900px;
-  width: 100%;  
-}
-
-.bg-text {
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.bg-text h2 {
-  margin-bottom: 10px;
-  font-family: "Rubik";
-  font-size: 5rem;
-  color: #ffffff;
-  text-align: center;
-}
-
-.bg-text h3 {
-  margin-top: 20px;
-  font-family: "Signika";
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-}
+/* --------------------- About Section ----------------------- */
