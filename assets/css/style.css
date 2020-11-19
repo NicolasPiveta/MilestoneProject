@@ -25,6 +25,10 @@
   background-color: rgba(0, 188, 226, .7)  
 }
 
+.nav {
+    padding-left: 47%;
+}
+
 .nav-link {
   font-family: "Signika";
   font-weight: 700;
@@ -37,7 +41,6 @@
     color: #fff;
     background-color: #001253;
 }
-
 
 #home-img {
   width: 100%;
@@ -91,11 +94,11 @@
   }
 }
 
-
 .btn-bg {
   font-size: 1.2rem;
   font-family: "Signika", sans-serif;
 }
+
 .btn-bg .btn-left {
   position: absolute;
   top: 85%;
@@ -209,7 +212,7 @@ hr {
 
 #room-pg {
     
-    background-color: #B8860b;
+    background-color: #8FB2B9;
 }
 
 .title {
@@ -222,7 +225,7 @@ hr {
 }
 
 .jumbotron {
-    background-color: #bf9b30;
+    background-color: #A7B9BC;
 }
 
 .jumbotron h4 {
@@ -231,18 +234,90 @@ hr {
     font-size: 2rem;
 }
 
-.jumbotron p {
+.jumbotron h5 {
     font-family: "Signika";
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.jumbotron p {
+    font-family: "Signika";
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 5px;
 }
 
 .jumbotron .btn {
     text-transform: uppercase;
     background-color: #001253;
     color: #fafafa;
+    
 }
 .jumbotron .btn:hover {
-    background-color: red;
-     
+    background-color: #0077ff;     
+}
+
+.jumbotron .row:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.6)
+}
+
+.jumbotron img {
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+.row {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+.jumbotron div#slider { overflow: hidden; }
+.jumbotron div#slider figure img { width: 20%; float: left; }
+.jumbotron div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+}
+
+body { margin: 0; } 
+.jumbotron div#slider2 { overflow: hidden; }
+.jumbotron div#slider2 figure img { width: 20%; float: left; }
+.jumbotron div#slider2 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+}
+
+body { margin: 0; } 
+.jumbotron div#slider3 { overflow: hidden; }
+.jumbotron div#slider3 figure img { width: 20%; float: left; }
+.jumbotron div#slider3 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
 }
