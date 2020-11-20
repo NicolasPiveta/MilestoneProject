@@ -22,11 +22,11 @@
 }
 
 .navbar {
-  background-color: rgba(0, 188, 226, .7)  
+  background-color: rgba(0, 188, 226, 0.7);
 }
 
 .nav {
-    padding-left: 47%;
+  padding-left: 47%;
 }
 
 .nav-link {
@@ -37,9 +37,10 @@
   color: #fafafa;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #001253;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #001253;
 }
 
 #home-img {
@@ -75,7 +76,7 @@
   position: absolute;
   top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
 }
 
 #home-pg {
@@ -139,185 +140,317 @@
 /* --------------------- About Section ----------------------- */
 
 #about-pg {
-  
-  background-color: rgba(0, 188, 226, .7);   
+  background-color: rgba(0, 188, 226, 0.7);
   background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
   color: #fafafa;
   position: relative;
 }
 
 #about-txt {
-    margin-top: 180px;
-    margin-right: 50px; 
-    width: 43%;
-    float: right;
-    text-align: left;
-    color: #001253;
+  margin-top: 180px;
+  margin-right: 50px;
+  width: 43%;
+  float: right;
+  text-align: left;
+  color: #001253;
 }
 #about-txt h1 {
-    margin-top: 15px;
-    padding-bottom: 75px;
-    font-family: "Rubik";
-    font-size: 4rem;
-    text-decoration: underline;
-    text-transform: uppercase;    
+  margin-top: 15px;
+  padding-bottom: 75px;
+  font-family: "Rubik";
+  font-size: 4rem;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 #about-txt h2 {
-    font-family: "Signika";
-    font-size: 1.5rem;
-    font-weight: 400;
+  font-family: "Signika";
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 #about-txt p {
-    padding-top: 320px;
-    font-family: "Signika";
-    font-size: 1.5rem;
-    font-weight: 400;        
+  padding-top: 320px;
+  font-family: "Signika";
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-hr {    
+hr {
   border: 10px;
 }
 
-#left-img {       
-    margin-left: 200px;  
-    padding-top: 180px;
-    z-index: auto;
+#left-img {
+  margin-left: 200px;
+  padding-top: 180px;
+  z-index: auto;
 }
 
-#center-img {    
-    margin-left: 450px;
-    margin-top: -290px;    
-    position: relative;
-    z-index: auto;
+#center-img {
+  margin-left: 450px;
+  margin-top: -290px;
+  position: relative;
+  z-index: auto;
 }
 
-#right-img {       
-    margin-top: -230px;
-    margin-left: 700px;
-    position: relative;
-    z-index: auto;   
+#right-img {
+  margin-top: -230px;
+  margin-left: 700px;
+  position: relative;
+  z-index: auto;
 }
 
-#about-video {    
-    
-    margin-left: 200px;
-    margin-top: 150px;
-    padding-bottom: 150px;
+#about-video {
+  margin-left: 200px;
+  margin-top: 150px;
+  padding-bottom: 150px;
 }
-
 
 /* --------------------- Rooms Section ----------------------- */
 
 #room-pg {
-    
-    background-color: #8FB2B9;
+  background-color: #8fb2b9;
+  height: 1700px;
 }
 
-.title {
-    font-family: "Rubik";
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-    padding-top: 150px;
-    padding-bottom: 100px;
+#title-txt h1 {
+  font-family: "Rubik";
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .jumbotron {
-    background-color: #A7B9BC;
+  background-color: #a7b9bc;
 }
 
 .jumbotron h4 {
-    font-family: "Rubik";
-    font-weight: 700;
-    font-size: 2rem;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .jumbotron h5 {
-    font-family: "Signika";
-    font-weight: 700;
-    font-size: 1.5rem;
+  font-family: "Signika";
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .jumbotron p {
-    font-family: "Signika";
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 5px;
+  font-family: "Signika";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 5px;
 }
 
 .jumbotron .btn {
-    text-transform: uppercase;
-    background-color: #001253;
-    color: #fafafa;
-    
+  text-transform: uppercase;
+  background-color: #001253;
+  color: #fafafa;
 }
 .jumbotron .btn:hover {
-    background-color: #0077ff;     
+  background-color: #0077ff;
 }
 
 .jumbotron .row:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.6)
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.6);
 }
 
 .jumbotron img {
-    max-width: 100%;
-    max-height: 100%;
-    }
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .row {
-    margin-right: 100px;
-    margin-left: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.btn-room {
+  float: right;
+}
+.badge {
+  float: left;
+  margin-left: 20px;
 }
 
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
-body { margin: 0; } 
-.jumbotron div#slider { overflow: hidden; }
-.jumbotron div#slider figure img { width: 20%; float: left; }
-.jumbotron div#slider figure { 
+body {
+  margin: 0;
+}
+.jumbotron div#slider {
+  overflow: hidden;
+}
+.jumbotron div#slider figure img {
+  width: 20%;
+  float: left;
+}
+.jumbotron div#slider figure {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 20s slidy infinite; 
+  animation: 20s slidy infinite;
 }
 
-body { margin: 0; } 
-.jumbotron div#slider2 { overflow: hidden; }
-.jumbotron div#slider2 figure img { width: 20%; float: left; }
-.jumbotron div#slider2 figure { 
+body {
+  margin: 0;
+}
+.jumbotron div#slider2 {
+  overflow: hidden;
+}
+.jumbotron div#slider2 figure img {
+  width: 20%;
+  float: left;
+}
+.jumbotron div#slider2 figure {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 20s slidy infinite; 
+  animation: 20s slidy infinite;
 }
 
-body { margin: 0; } 
-.jumbotron div#slider3 { overflow: hidden; }
-.jumbotron div#slider3 figure img { width: 20%; float: left; }
-.jumbotron div#slider3 figure { 
+body {
+  margin: 0;
+}
+.jumbotron div#slider3 {
+  overflow: hidden;
+}
+.jumbotron div#slider3 figure img {
+  width: 20%;
+  float: left;
+}
+.jumbotron div#slider3 figure {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 20s slidy infinite; 
+  animation: 20s slidy infinite;
+}
+
+/* --------------------- Features Section ----------------------- */
+
+#features-pg {    
+  background-color: rgba(0, 188, 226, 0.7);
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+  height: 1000px;
+}
+
+#features-pg h1{
+  font-family: "Rubik";
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#features-pg h2{
+  font-family: "Signika";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;  
+  margin-bottom: 50px;
+}
+
+.container-features {
+  position: relative;  
+}
+
+.container-features img {
+    max-width: 300px;
+    max-height: 300px;
+    float: left;
+}
+
+.img-1 {
+  position: absolute;
+  left: 20%;
+  top: 200px;
+  z-index: 2;
+}
+.img-2 {
+  position: absolute;
+  left: 10%;
+  top: 50px;
+  z-index: 1;
+}
+.img-3 {
+  position: absolute;
+  left: 30%;
+  top: 50px;
+  z-index: 1;
+}
+
+.img-4 {
+  position: absolute;
+  left: 10%;
+  top: 350px;
+  z-index: 1;
+}
+.img-5 {
+  position: absolute;
+  left: 30%;
+  top: 350px;
+  z-index: 1;
+}
+
+.features-content-left {
+    float: right;
+    position: absolute;
+    right: 550px;
+}
+
+.features-content-right {
+     float: right;
+    position: absolute;
+    right: 100px;
+}
+
+
+/* --------------------- testimonial Section ----------------------- */
+
+#testimonial-pg {    
+  background-color: red;
 }
