@@ -140,78 +140,95 @@
 /* --------------------- About Section ----------------------- */
 
 #about-pg {
-  background-color: rgba(0, 188, 226, 0.7);
+  height: 1300px;
+  background-color: #00bce2;
   background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
-  color: #fafafa;
-  position: relative;
 }
 
-#about-txt {
-  margin-top: 180px;
-  margin-right: 50px;
-  width: 43%;
+#about-content {
   float: right;
-  text-align: left;
-  color: #001253;
+  position: relative;
+  right: 150px;
+  top: 200px;
+  max-width: 500px;
 }
-#about-txt h1 {
-  margin-top: 15px;
-  padding-bottom: 75px;
+
+#about-content h1 {
   font-family: "Rubik";
-  font-size: 4rem;
-  text-decoration: underline;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 150px;
 }
 
-#about-txt h2 {
+#about-content p {
   font-family: "Signika";
+  font-weight: 700;
   font-size: 1.5rem;
-  font-weight: 400;
+  padding-bottom: 100px;
+  line-height: 30px;
 }
 
-#about-txt p {
-  padding-top: 320px;
-  font-family: "Signika";
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-hr {
-  border: 10px;
-}
-
-#left-img {
-  margin-left: 200px;
-  padding-top: 180px;
-  z-index: auto;
-}
-
-#center-img {
-  margin-left: 450px;
-  margin-top: -290px;
+#container-about {
   position: relative;
-  z-index: auto;
 }
 
-#right-img {
-  margin-top: -230px;
-  margin-left: 700px;
-  position: relative;
-  z-index: auto;
+#container-about img {
+  float: left;
+}
+
+.about-img-1 {
+  width: 320px;
+  height: 300px;
+  position: absolute;
+  left: 30px;
+  top: 250px;
+  z-index: 2;
+}
+
+.about-img-2 {
+  width: 390px;
+  height: 350px;
+  position: absolute;
+  left: -300px;
+  top: 200px;
+  z-index: 1;
+}
+.about-img-3 {
+  width: 250px;
+  position: absolute;
+  left: 320px;
+  top: 300px;
+  z-index: 100;
 }
 
 #about-video {
-  margin-left: 200px;
-  margin-top: 150px;
-  padding-bottom: 150px;
-  position: relative;
+  float: left;
+}
+
+.about-video-1 {
+  width: 880px;
+  height: 420px;
+  position: absolute;
+  top: 700px;
+  left: -300px;
+  z-index: 1;
 }
 
 /* --------------------- Rooms Section ----------------------- */
 
 #room-pg {
-  background-color: #8fb2b9;
+  background-color: #869ea3;
   height: 1700px;
+}
+
+.jumbotron {
+  background-color: inherit;
+}
+
+.row {
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: #a7b9bc;
 }
 
 #title-txt h1 {
@@ -224,9 +241,6 @@ hr {
   padding-bottom: 50px;
 }
 
-.jumbotron {
-  background-color: #a7b9bc;
-}
 
 .jumbotron h4 {
   font-family: "Rubik";
@@ -265,10 +279,7 @@ hr {
   max-height: 100%;
 }
 
-.row {
-  margin-right: 100px;
-  margin-left: 100px;
-}
+
 
 .btn-room {
   float: right;
@@ -370,13 +381,13 @@ body {
 
 /* --------------------- Features Section ----------------------- */
 
-#features-pg {    
+#features-pg {
   background-color: rgba(0, 188, 226, 0.7);
   background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
   height: 1000px;
 }
 
-#features-pg h1{
+#features-pg h1 {
   font-family: "Rubik";
   text-align: center;
   font-size: 3rem;
@@ -386,64 +397,63 @@ body {
   padding-bottom: 50px;
 }
 
-#features-pg h2{
+#features-pg h2 {
   font-family: "Signika";
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   margin-bottom: 50px;
 }
 
 .features-pg h3 {
-  font-family: "Signika";  
+  font-family: "Signika";
   font-size: 1.5rem;
   font-weight: 400;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .features-content-left {
-    float: left;
-    position: relative;
-    margin-top: 80px;
-    margin-left: 55%;
-    max-width: 300px;
+  float: left;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 55%;
+  max-width: 300px;
 }
 .features-icon-left {
-    float: left;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: -30%;
-    font-size: 50px;
-    line-height: 50px;
-    }
-    
+  float: left;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: -30%;
+  font-size: 50px;
+  line-height: 50px;
+}
 
 .features-content-right {
-    float: right;
-    position: relative;    
-    margin-top: 80px;
-    margin-right: 2%;
-    max-width: 300px;
+  float: right;
+  position: relative;
+  margin-top: 80px;
+  margin-right: 2%;
+  max-width: 300px;
 }
 
 .features-icon-right {
-    float: right;
+  float: right;
   position: absolute;
-    margin-top: 40px;
-    margin-left: -30%;
-    font-size: 50px;
-    line-height: 50px;
+  margin-top: 40px;
+  margin-left: -30%;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .container-features {
-  position: relative;  
+  position: relative;
 }
 
 .container-features img {
-    max-width: 300px;
-    max-height: 300px;
-    float: left;
+  max-width: 300px;
+  max-height: 300px;
+  float: left;
 }
 
 .img-1 {
@@ -480,9 +490,8 @@ body {
 
 /* --------------------- testimonial Section ----------------------- */
 
-#testimonial-pg {    
+#testimonial-pg {
   background-color: white;
 }
-
 
 /* --------------------- Features Section ----------------------- */
