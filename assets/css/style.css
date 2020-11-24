@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700|Signika:100,200,300,400,500,600,700");
 
 /* --------------------- Heading ----------------------- */
@@ -12,8 +19,6 @@
 }
 
 .navbar-brand {
-  margin-left: 20px;
-  padding: 1px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   color: #fafafa;
@@ -26,13 +31,13 @@
 }
 
 .nav {
-  padding-left: 47%;
+  padding-left: 50%;
 }
 
 .nav-link {
   font-family: "Signika";
   font-weight: 700;
-  margin-right: 30px;
+  padding-right: 30px;
   letter-spacing: 1px;
   color: #fafafa;
 }
@@ -47,8 +52,12 @@
   width: 100%;
   height: 850px;
 
+  -webkit-animation-name: image-zoom;
+
   animation-name: image-zoom;
+  -webkit-animation-duration: 5s;
   animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 
   position: relative;
@@ -63,6 +72,8 @@
   position: absolute;
   top: 65%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -76,6 +87,8 @@
   position: absolute;
   top: 75%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -86,11 +99,24 @@
   position: relative;
 }
 
-@keyframes image-zoom {
+@-webkit-keyframes image-zoom {
   from {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes image-zoom {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 }
@@ -104,6 +130,7 @@
   position: absolute;
   top: 85%;
   left: 45%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #001253;
@@ -119,6 +146,7 @@
   position: absolute;
   top: 85%;
   left: 55%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #001253;
@@ -147,9 +175,9 @@
 
 #about-content {
   float: right;
-  position: relative;
-  right: 150px;
-  top: 200px;
+  position: absolute;
+  right: 300px;
+  padding-top: 200px;
   max-width: 500px;
 }
 
@@ -157,14 +185,13 @@
   font-family: "Rubik";
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 #about-content p {
   font-family: "Signika";
   font-weight: 700;
   font-size: 1.5rem;
-  padding-bottom: 100px;
   line-height: 30px;
 }
 
@@ -211,21 +238,20 @@
   position: absolute;
   top: 700px;
   left: -300px;
-  z-index: 1;
 }
 
 /* --------------------- Rooms Section ----------------------- */
 
 #room-pg {
   background-color: #869ea3;
-  height: 1700px;
+  height: 1800px;
 }
 
 .jumbotron {
   background-color: inherit;
 }
 
-.row {
+#room-pg .row {
   margin-right: 100px;
   margin-left: 100px;
   background-color: #a7b9bc;
@@ -240,7 +266,6 @@
   padding-top: 100px;
   padding-bottom: 50px;
 }
-
 
 .jumbotron h4 {
   font-family: "Rubik";
@@ -271,6 +296,7 @@
 }
 
 .jumbotron .row:hover {
+  -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -279,14 +305,42 @@
   max-height: 100%;
 }
 
-
-
 .btn-room {
   float: right;
 }
 .badge {
   float: left;
   margin-left: 20px;
+}
+
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 @keyframes slidy {
@@ -319,9 +373,6 @@
   }
 }
 
-body {
-  margin: 0;
-}
 .jumbotron div#slider {
   overflow: hidden;
 }
@@ -336,12 +387,10 @@ body {
   left: 0;
   text-align: left;
   font-size: 0;
+  -webkit-animation: 20s slidy infinite;
   animation: 20s slidy infinite;
 }
 
-body {
-  margin: 0;
-}
 .jumbotron div#slider2 {
   overflow: hidden;
 }
@@ -356,12 +405,10 @@ body {
   left: 0;
   text-align: left;
   font-size: 0;
+  -webkit-animation: 20s slidy infinite;
   animation: 20s slidy infinite;
 }
 
-body {
-  margin: 0;
-}
 .jumbotron div#slider3 {
   overflow: hidden;
 }
@@ -376,6 +423,7 @@ body {
   left: 0;
   text-align: left;
   font-size: 0;
+  -webkit-animation: 20s slidy infinite;
   animation: 20s slidy infinite;
 }
 
@@ -384,7 +432,7 @@ body {
 #features-pg {
   background-color: rgba(0, 188, 226, 0.7);
   background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
-  height: 1000px;
+  height: 1100px;
 }
 
 #features-pg h1 {
@@ -415,9 +463,9 @@ body {
 
 .features-content-left {
   float: left;
-  position: relative;
-  margin-top: 80px;
-  margin-left: 55%;
+  position: absolute;
+  left: 650px;
+  padding-top: 80px;
   max-width: 300px;
 }
 .features-icon-left {
@@ -432,8 +480,8 @@ body {
 .features-content-right {
   float: right;
   position: relative;
-  margin-top: 80px;
-  margin-right: 2%;
+  left: 300px;
+  padding-top: 80px;
   max-width: 300px;
 }
 
@@ -446,44 +494,43 @@ body {
   line-height: 50px;
 }
 
-.container-features {
+#features-pg .container {
   position: relative;
 }
 
-.container-features img {
-  max-width: 300px;
-  max-height: 300px;
-  float: left;
+#features-pg .container img {
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .img-1 {
   position: absolute;
-  left: 20%;
-  top: 200px;
+  left: -30px;
+  top: 215px;
   z-index: 2;
 }
 .img-2 {
   position: absolute;
-  left: 10%;
-  top: 50px;
+  left: -200px;
+  top: 80px;
   z-index: 1;
 }
 .img-3 {
   position: absolute;
-  left: 30%;
-  top: 50px;
+  left: 150px;
+  top: 80px;
   z-index: 1;
 }
 
 .img-4 {
   position: absolute;
-  left: 10%;
+  left: -200px;
   top: 350px;
   z-index: 1;
 }
 .img-5 {
   position: absolute;
-  left: 30%;
+  left: 150px;
   top: 350px;
   z-index: 1;
 }
@@ -491,7 +538,96 @@ body {
 /* --------------------- testimonial Section ----------------------- */
 
 #testimonial-pg {
-  background-color: white;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  background-color: rgba(134, 158, 163, 0.8);
+  font-family: "Open Sans";
 }
 
-/* --------------------- Features Section ----------------------- */
+#testimonial-carousel {
+  background-color: rgba(134, 158, 163, 0.4);
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 5rem 8rem;
+  color: rgb(39, 43, 44);
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Signika";
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 3rem 2rem;
+    color: #fafafa;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+}
+
+.carousel-caption img {
+  width: 6rem;
+  border-radius: 5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption img {
+    width: 4rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+  }
+}
+
+#image-caption {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  #image-caption {
+    font-style: normal;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+  }
+}
+
+#testimonial-pg i {
+  background-color: rgb(39, 43, 44);
+  padding: 1.4rem;
+}
+
+@media (max-width: 767px) {
+  i {
+    padding: 0.8rem;
+  }
+}
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  opacity: unset;
+}
+
+/* --------------------- Media Query Section ----------------------- */
